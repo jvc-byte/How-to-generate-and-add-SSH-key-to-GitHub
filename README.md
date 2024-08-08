@@ -1,6 +1,6 @@
 # How-to-generate-and-add-SSH-key-to-GitHub
 
-## This means the SSH key isn't being accepted by GitHub. The below are verified steps to add SSH key to your GItHub account:
+## The below are verified steps to add SSH key to your GItHub account (Linux CLI):
 
 ### 1. Check for Existing SSH Keys:
 ```bash
