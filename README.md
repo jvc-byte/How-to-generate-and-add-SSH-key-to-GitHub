@@ -1,4 +1,4 @@
-# How-to-generate-and-add-SSH-key-to-GitHub
+# How-to-generate-and-add-SSH-key-to-GitHub (Linux CLI)
 
 ## The below are verified steps to add SSH key to your GItHub account (Linux CLI):
 
