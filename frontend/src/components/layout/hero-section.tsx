@@ -87,7 +87,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="hidden lg:block perspective-near mt-24 translate-x-4 md:absolute md:-right-[16] md:bottom-16 md:left-1/2 md:top-70 md:mt-0 md:translate-x-0">
+            <div className="hidden lg:inline-flex lg:w-[50%] perspective-near mt-24 translate-x-4 md:absolute md:-right-[16] md:bottom-16 md:left-1/2 md:top-70 md:mt-0 md:translate-x-0">
               <div className="before:border-foreground/5 before:bg-foreground/5 relative h-full before:absolute before:-inset-x-4 before:bottom-9 before:top-0 before:skew-x-6 before:rounded-[calc(var(--radius)+0.5rem)] before:border">
                 <div className="bg-background rounded-[calc(var(--radius)+0.5rem)] shadow-foreground/10 ring-foreground/5 relative h-full -translate-y-29 skew-x-6 overflow-hidden border border-transparent shadow-md ring-1">
                   <img
