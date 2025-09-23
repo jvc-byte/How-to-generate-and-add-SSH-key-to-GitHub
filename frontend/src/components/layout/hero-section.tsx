@@ -4,7 +4,7 @@ import { HeroHeader } from "@/components/layout/header";
 import { ChevronRight } from "lucide-react";
 import { TextLoopBasic } from "./tesxt-loop-roll";
 
-const heroImage = "/src/assets/mist/tailark.png";
+const heroImage = "/app-dash.png";
 const navLinks = [
   { name: "Get Started", to: "#link" },
   { name: "Watch Video", to: "#link" },
@@ -37,16 +37,16 @@ export default function HeroSection() {
                       </Link>
                     </Button>
                     {/* <Button
-                                            key={2}
-                                            asChild
-                                            size="lg"
-                                            variant="outline"
-                                            className="pl-5">
-                                            <Link to={navLinks[1].to}>
-                                                <CirclePlay className="fill-primary/25 stroke-primary" />
-                                                <span className="text-nowrap">Watch video</span>
-                                            </Link>
-                                        </Button> */}
+                      key={2}
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="pl-5">
+                      <Link to={navLinks[1].to}>
+                        <CirclePlay className="fill-primary/25 stroke-primary" />
+                        <span className="text-nowrap">Watch video</span>
+                      </Link>
+                    </Button> */}
                   </div>
                 </div>
 
