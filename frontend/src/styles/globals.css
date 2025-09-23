@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html, body {
+    overflow: hidden;
+}
+
 /* ================================
    LIGHT THEME COLORS (default)
    ================================= */

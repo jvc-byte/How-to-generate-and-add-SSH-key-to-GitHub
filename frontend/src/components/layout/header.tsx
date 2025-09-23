@@ -43,7 +43,7 @@ export const HeroHeader = () => {
                 <span className="text-2xl font-bold md:text-3xl">CXIIIDAO</span>
               </Link>
 
-              <div className="flex items-center justify-center gap-6">
+              <div className="flex items-center justify-center gap-2">
                 <div className="lg:hidden">
                   <ThemeSwitcher />
                 </div>

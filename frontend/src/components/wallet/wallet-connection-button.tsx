@@ -19,6 +19,7 @@ import {
   ChevronDown,
   User,
   Check,
+  User2,
 } from "lucide-react";
 import { generateColorFromAddress } from "@/lib/utils";
 import {
@@ -89,9 +90,8 @@ export function WalletConnectionButton({
     try {
       toast.promise(switchChainAsync({ chainId }), {
         loading: "Switching network...",
-        success: `Switched to ${
-          chains.find((c) => c.id === chainId)?.name
-        } successfully!`,
+        success: `Switched to ${chains.find((c) => c.id === chainId)?.name
+          } successfully!`,
         error: "Failed to switch network",
       });
     } catch (error) {
@@ -115,16 +115,29 @@ export function WalletConnectionButton({
       {({ isConnecting, show }) => {
         if (!isConnected) {
           return (
-            <Button
-              onClick={show}
-              variant={variant}
-              size={size}
-              disabled={isConnecting}
-              className="gap-2"
-            >
-              <Wallet className="h-4 w-4" />
-              {isConnecting ? "Connecting..." : "Connect Wallet"}
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button
+                onClick={show}
+                variant={variant}
+                size={size}
+                disabled={isConnecting}
+                className="gap-2 hidden md:inline-flex"
+              >
+                <Wallet className="h-4 w-4" />
+                {isConnecting ? "Connecting..." : "Connect Wallet"}
+              </Button>
+
+              <Button
+                onClick={show}
+                variant={variant}
+                size={size}
+                disabled={isConnecting}
+                className="gap-2 md:hidden"
+              >
+                <Wallet className="h-4 w-4" />
+                {isConnecting ? "..." : <User2 className="h-4 w-4" />}
+              </Button>
+            </div>
           );
         }
 
@@ -273,9 +286,8 @@ export function WalletConnectionButton({
                   <DropdownMenuItem
                     key={chainOption.id}
                     onClick={() => handleSwitchChain(chainOption.id)}
-                    className={`cursor-pointer flex items-center justify-between ${
-                      isCurrentChain ? "bg-primary/5" : ""
-                    } ${isSwitching ? "opacity-50" : ""}`}
+                    className={`cursor-pointer flex items-center justify-between ${isCurrentChain ? "bg-primary/5" : ""
+                      } ${isSwitching ? "opacity-50" : ""}`}
                     disabled={isCurrentChain || chainSwitchState.isLoading}
                   >
                     <div className="flex items-center gap-2">
